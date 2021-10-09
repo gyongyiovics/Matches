@@ -4,7 +4,6 @@ public class MatchBox {
     private int amount;
 
     /**
-     * method to add player to box
      * method to fetch random number of random matches
      */
 
