@@ -1,4 +1,10 @@
 package players;
 
-public class Computer {
+import matches.Match;
+
+public class Computer extends Player{
+    public Computer(Match ownMatch) {
+        super(ownMatch);
+    }
+
 }

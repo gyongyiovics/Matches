@@ -2,15 +2,14 @@ package matches;
 
 public class MatchBox {
     private int amount;
-    private Match match;
 
     /**
+     * method to add player to box
      * method to fetch random number of random matches
      */
 
-    public MatchBox(int amount, Match match) {
+    public MatchBox(int amount) {
         this.amount = amount;
-        this.match = match;
     }
 
     public int getAmount() {
@@ -19,13 +18,5 @@ public class MatchBox {
 
     public void setAmount(int amount) {
         this.amount = amount;
-    }
-
-    public Match getMatch() {
-        return match;
-    }
-
-    public void setMatch(Match match) {
-        this.match = match;
     }
 }
