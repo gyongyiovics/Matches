@@ -25,7 +25,8 @@ public class MatchBox {
         this.amount = amount;
     }
 
-    private int matchInBox() {
+    public int matchInBox() {
+        System.out.println("The number of matches in this box: ");
         Random rand = new Random();
         int min = 4;
         int max = 40;
@@ -34,12 +35,5 @@ public class MatchBox {
         return randomNum;
     }
 
-    private void playerPullMatchFromBox(Player player) {
-        while (this.getAmount() > 0) {
-            player.setOwnMatch(1);
-            this.setAmount(-1);
-        }
-        System.out.println("Matches in box: " + this.getAmount());
-        System.out.println("Matches of " + player.getName() + " are " + player.getOwnMatch());
-    }
+
 }

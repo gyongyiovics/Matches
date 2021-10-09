@@ -1,9 +1,6 @@
 package players;
 
-import matches.Match;
-
-import java.util.ArrayList;
-import java.util.List;
+import matches.MatchBox;
 
 public class Player {
     private String name;
@@ -32,4 +29,14 @@ public class Player {
         this.ownMatch = ownMatch;
     }
 
+    public void pullMatchFromBox(MatchBox box) {
+        while (box.getAmount() > 0) {
+            this.setOwnMatch(this.getOwnMatch() + 1);
+            box.setAmount(box.getAmount() - 1);
+            System.out.println("Matches in box: " + box.getAmount());
+            System.out.println("Matches of " + this.getName() + " are " + this.getOwnMatch());
+        }
+        //System.out.println("Matches in box: " + box.getAmount());
+        //System.out.println("Matches of " + this.getName() + " are " + this.getOwnMatch());
+    }
 }
