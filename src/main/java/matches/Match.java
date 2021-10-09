@@ -1,6 +1,7 @@
 package matches;
 
 public class Match {
+    //is this class necesssary?
     private int idNumber; //number of the matches -> 1-40
     private String color;
 

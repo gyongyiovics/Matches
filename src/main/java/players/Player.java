@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
-    private Match ownMatch;
+    private String name;
+    private int ownMatch;
 
     /**
      * method get a MatchBox
@@ -14,17 +15,21 @@ public class Player {
      *
      */
 
-    public Player(Match ownMatch) {
+    public Player(String name, int ownMatch) {
+        this.name = name;
         this.ownMatch = ownMatch;
     }
 
-    public Match getOwnMatch() {
+    public String getName() {
+        return name;
+    }
+
+    public int getOwnMatch() {
         return ownMatch;
     }
 
-    private List<Match> onwMatches(int num) {
-        List<Match> matches = new ArrayList<>();
-        //num -> matches.length
-        return matches;
+    public void setOwnMatch(int ownMatch) {
+        this.ownMatch = ownMatch;
     }
+
 }

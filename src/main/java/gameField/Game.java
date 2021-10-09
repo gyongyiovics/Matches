@@ -1,16 +1,14 @@
 package gameField;
 
-import matches.Match;
 import matches.MatchBox;
+import players.Computer;
 import players.Player;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Game {
-    Player player1;
-    Player player2;
+    Player player1 = new Player("Gyufás Rufusz", 10);
+    Player player2 = new Computer("Mikrobi", 10);
 
     MatchBox matchBox;
 
@@ -22,13 +20,8 @@ public class Game {
         int low = 1;
         int amount = m.getAmount();
 
-        List<Match> matchInTheBox = new ArrayList<>();
-
-
         System.out.println("Pull some matches between " + low + " and " + amount);
-        //not the amount of matches in the box, but the match numbers
     }
-
 
     private String userInput() {
         String input = scanner().nextLine();
