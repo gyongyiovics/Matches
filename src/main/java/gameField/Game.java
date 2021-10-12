@@ -4,19 +4,11 @@ import matches.MatchBox;
 import players.Computer;
 import players.Player;
 
-import java.util.Scanner;
-
 public class Game {
     Player player1 = null;
     Player player2 = null;
 
     MatchBox matchBox;
-
-    /**
-     * method to pull matches from the box
-     *
-     * TODO: put the while here instead of the player
-     */
 
     public void pullMatchFromBox() {
         player1 = new Player("Gyufás Rufusz");
