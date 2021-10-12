@@ -1,7 +1,9 @@
 package players;
 
 public class Computer extends Player{
-    public Computer(String name, int ownMatch) {
-        super(name, ownMatch);
+    public Computer(String name) {
+        super(name);
     }
+
+    //TODO: override players method
 }
