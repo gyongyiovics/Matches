@@ -5,7 +5,7 @@ import java.util.Random;
 public class MatchBox {
     private int amount;
     private final int MIN = 4;
-    private final int MAX = 40;
+    private final int MAX = 10;
 
     /**
      * method to fetch random number of random matches
